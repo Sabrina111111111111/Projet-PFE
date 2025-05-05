@@ -1,59 +1,23 @@
 {
-  "name": "notus-react",
-  "version": "1.1.0",
-  "description": "Notus React - A free Tailwind CSS and React UI Kit and Admin by Creative Tim.",
-  "repository": "https://github.com/creativetimofficial/notus-react",
-  "license": "MIT",
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "5.15.3",
-    "@popperjs/core": "2.9.1",
-    "@progress/kendo-react-pdf": "^10.2.0",
-    "@tailwindcss/forms": "0.2.1",
-    "autoprefixer": "10.2.5",
-    "chart.js": "2.9.4",
-    "date-fns": "^2.28.0",
-    "framer-motion": "^4.1.17",
-    "gulp": "4.0.2",
-    "gulp-append-prepend": "1.0.8",
-    "postcss": "8.4.21",
-    "react": "17.0.1",
-    "react-big-calendar": "^1.18.0",
-    "react-dom": "17.0.1",
-    "react-dropzone": "^14.3.8",
-    "react-icons": "^5.5.0",
-    "react-router": "5.2.0",
-    "react-router-dom": "5.2.0",
-    "react-scripts": "4.0.3",
-    "react-to-pdf": "^2.0.0",
-    "react-to-print": "^3.1.0",
-    "reactstrap": "^9.2.3",
-    "recharts": "^2.15.3",
-    "tailwindcss": "2.0.4"
-  },
+  "name": "backend-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "commonjs",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build && gulp licenses",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm start",
-    "build:tailwind": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.14.1",
+    "winston": "^3.17.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "optionalDependencies": {
-    "typescript": "4.2.3"
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
